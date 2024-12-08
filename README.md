@@ -36,8 +36,8 @@ This method avoids the "Incorrect function" error without triggering UAC for the
 
 4. **Using the "Run as Administrator (RAM Disk Fix)" Option**
    - After importing the registry file and restarting Explorer, right-click on the `.exe` file located on the RAM disk.
-   - **If using the old context menu**, hold down the Shift key while right-clicking the `.exe` and select **"Run as Administrator (RAM Disk Fix)"**.
-   - **If using the default context menu**, simply right-click the `.exe` file and select **"Run as Administrator (RAM Disk Fix)"**.
+   - **If using the default context menu**, hold down the Shift key while right-clicking the `.exe` and select **"Run as Administrator (RAM Disk Fix)"**.
+   - **If using the old context menu**, simply right-click the `.exe` file and select **"Run as Administrator (RAM Disk Fix)"**.
 
     ![runasadmin](https://github.com/user-attachments/assets/b23920bc-b5af-45f8-998f-c5117c9d5870)
 
