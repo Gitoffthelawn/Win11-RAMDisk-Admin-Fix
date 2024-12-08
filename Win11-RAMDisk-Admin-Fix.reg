@@ -8,7 +8,7 @@
 ; can be exploited by malware, allowing it to run without triggering the
 ; usual UAC warnings.
 ;
-; Version: v1.0
+; Version: v1.1
 ; Credit： by oood
 ; Source: https://github.com/oood/Win11-RAMDisk-Admin-Fix/
 ; License: CC0
