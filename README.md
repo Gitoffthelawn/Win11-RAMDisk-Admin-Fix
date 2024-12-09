@@ -22,7 +22,7 @@ This method avoids the "Incorrect function" error without triggering UAC for the
    - Download [Win11-RAMDisk-Admin-Fix.reg](Win11-RAMDisk-Admin-Fix.reg) from the repository and double-click it to import the registry.
 
 2. **Optional: Switch to the Old Context Menu**
-   - To avoid holding the Shift key when right-clicking an `.exe` file, modify the registry by running the following command in an administrator command prompt:
+   - To avoid holding the Shift key when right-clicking an `.exe` file, modify the registry by running the following command in **Command Prompt**:
      ```sh
      reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
      ```
