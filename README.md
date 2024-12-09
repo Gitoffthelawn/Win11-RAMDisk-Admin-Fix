@@ -62,6 +62,32 @@ This fix has been verified to work well with **ImDisk Toolkit** (open source RAM
 
 Disclosure: this document was modified by ChatGPT to make it easier to read.
 
+### Alternative Method: Running Executables as Administrator via `cmd.exe` Shortcut
+
+**Run the Executable as Administrator by Dragging the `.exe` onto a `cmd.exe` Shortcut**
+
+1. **Create a `cmd.exe` Shortcut**:
+   - Shift-right-click on the desktop to open the context menu.
+   - Select **New -> Shortcut**.
+   - Enter the following content:
+     ```plaintext
+     %windir%\System32\cmd.exe /k start ""
+     ```
+   - Follow the prompts to create the shortcut.
+
+2. **Configure the Shortcut to Run as Administrator**:
+   - Shift-right-click on the newly created `cmd.exe` shortcut.
+   - Select **Properties**.
+   - Click on the **Shortcut** tab.
+   - Click **Advanced**.
+   - Check the box for **Run as administrator**.
+   - Click **OK** to apply the changes.
+
+3. **Using the Shortcut**:
+   - Drag any `.exe` file onto the `cmd.exe` shortcut.
+   - The executable will run with administrator privileges without causing the "Incorrect function" error, even on a RAM disk.
+
+
 ## License
 
 This project is available under the [Creative Commons Zero (CC0) License](LICENSE), allowing anyone to use, modify, and distribute the work without restrictions.
