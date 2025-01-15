@@ -4,15 +4,15 @@ In Windows 11 24H2 (including 2024 LTSC), User Account Control (UAC) fails to co
 
 ![Incorrect_function_window](https://github.com/user-attachments/assets/46bd4ff3-cbef-472d-affc-6f5a65da6639)
 
-This solution adds a "Run as Administrator (RAM Disk Fix)" option to the right-click context menu of `.exe` files located on the RAM disk. This option opens an elevated command prompt using PowerShell, which then runs the selected executable file with administrator privileges, bypassing the UAC issue.
+This solution adds a "Run as administrator (RAM Disk Fix)" option to the right-click context menu of `.exe` files. This option opens an elevated command prompt using PowerShell, which then runs the selected executable file with administrator privileges, bypassing the UAC issue.
 
 ## How It Works
 
 The process behind this fix is simple:
 
-1. When right-clicking an executable file on the RAM disk and selecting "Run as Administrator (RAM Disk Fix)", a **PowerShell command** is triggered.
+1. When right-clicking an executable file and selecting "Run as administrator (RAM Disk Fix)", a **PowerShell command** is triggered.
 2. The PowerShell command launches an **elevated command prompt** (with administrator privileges).
-3. The elevated command prompt then runs the selected executable file from the RAM disk, bypassing the UAC triggered by the original file, since UAC is only triggered for `cmd.exe`, not for the executable itself.
+3. The elevated command prompt then runs the selected executable file, bypassing the UAC triggered by the original file, since UAC is only triggered for `cmd.exe`, not for the executable itself.
 
 This method avoids the "Incorrect function" error without triggering UAC for the `.exe` file on the RAM disk.
 
@@ -34,10 +34,10 @@ This method avoids the "Incorrect function" error without triggering UAC for the
 3. **Restart Explorer**
    - Restart **Windows Explorer** via Task Manager to apply the changes to the right-click context menu.
 
-4. **Using the "Run as Administrator (RAM Disk Fix)" Option**
+4. **Using the "Run as administrator (RAM Disk Fix)" Option**
    - After importing the registry file and restarting Explorer, right-click on the `.exe` file located on the RAM disk.
-   - **If using the default context menu**, hold down the Shift key while right-clicking the `.exe` and select **"Run as Administrator (RAM Disk Fix)"**.
-   - **If using the old context menu**, simply right-click the `.exe` file and select **"Run as Administrator (RAM Disk Fix)"**.
+   - **If using the default context menu**, hold down the Shift key while right-clicking the `.exe` and select **"Run as administrator (RAM Disk Fix)"**.
+   - **If using the old context menu**, simply right-click the `.exe` file and select **"Run as administrator (RAM Disk Fix)"**.
 
     ![runasadmin](https://github.com/user-attachments/assets/b23920bc-b5af-45f8-998f-c5117c9d5870)
 
