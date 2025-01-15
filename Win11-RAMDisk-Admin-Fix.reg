@@ -15,7 +15,7 @@
 ; December 8, 2024
 
 [HKEY_CLASSES_ROOT\exefile\shell\RunAsAdminInRAMDisk]
-"MUIVerb"="Run as administrator (RAM Disk Fix)"
+"MUIVerb"="Run as administrator (RAM Disk &Fix)"
 
 [HKEY_CLASSES_ROOT\exefile\shell\RunAsAdminInRAMDisk\command]
 @="powershell -Command \"Start-Process cmd -ArgumentList '/c start \\\"\\\" \\\"%1\\\"'\" -Verb runAs\""
