@@ -8,15 +8,14 @@
 ; can be exploited by malware, allowing it to run without triggering the
 ; usual UAC warnings.
 ;
-; Version: v1.1
-; Credit： by oood
+; Version: v3.0
+; Credit：oood, tomasz1986
 ; Source: https://github.com/oood/Win11-RAMDisk-Admin-Fix/
 ; License: CC0
-; December 8, 2024
+; January 15, 2025
 
 [HKEY_CLASSES_ROOT\exefile\shell\RunAsAdminInRAMDisk]
 "MUIVerb"="Run as administrator (RAM Disk &Fix)"
 
 [HKEY_CLASSES_ROOT\exefile\shell\RunAsAdminInRAMDisk\command]
 @="powershell -Command \"Start-Process cmd -ArgumentList '/c start \\\"\\\" \\\"%1\\\"'\" -Verb runAs\""
-"Credit"="oood@github"
