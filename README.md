@@ -1,6 +1,6 @@
 # Fix: Run Executable as Administrator on RAM Disk in Windows 11
 
-In Windows 11 24H2 (including 2024 LTSC), User Account Control (UAC) fails to correctly handle `.exe` files on a RAM disk, resulting in an "Incorrect function" error when attempting to run them as an administrator.
+In Windows 11 24H2 (including LTSC 2024), User Account Control (UAC) fails to correctly handle `.exe` files on a RAM disk, resulting in an "Incorrect function" error when attempting to run them as an administrator.
 
 ![Incorrect_function_window](https://github.com/user-attachments/assets/46bd4ff3-cbef-472d-affc-6f5a65da6639)
 
