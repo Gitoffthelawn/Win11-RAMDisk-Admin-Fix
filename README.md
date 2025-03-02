@@ -1,3 +1,13 @@
+ImDisk Toolkit's author w77 has developed a new project called **[AIM Toolkit](https://sourceforge.net/projects/aim-toolkit/)**, which can also be used as a RAM disk. Unlike ImDisk, it will use a new signed driver Arsenal Image Mounter (AIM) from Olof Lagerkvist, which fundamentally solves the incompatibility errors that this repository attempts to mitigate. It is recommended to use AIM Toolkit instead of ImDisk Toolkit. 
+
+Thanks to
+
+[Olof Lagerkvist](https://github.com/LTRData) - Author of [ImDisk](https://github.com/LTRData/ImDisk) and [Arsenal Image Mounter (AIM)](https://github.com/ArsenalRecon/Arsenal-Image-Mounter)
+
+[w77](https://sourceforge.net/u/w77/profile/) - Author of [ImDisk Toolkit](https://sourceforge.net/projects/imdisk-toolkit/) and [AIM Toolkit](https://sourceforge.net/projects/aim-toolkit/)
+
+--------------------
+
 # Fix: Run Executable as Administrator on RAM Disk in Windows 11
 
 In Windows 11 24H2 (including LTSC 2024), User Account Control (UAC) fails to correctly handle `.exe` files on a RAM disk, resulting in an "Incorrect function" error when attempting to run them as an administrator.
